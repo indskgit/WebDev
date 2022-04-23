@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomFileImport</title>
+
+    <style media="screen">
+        body{
+            height: 100%;
+        }
+        /* #cust-Button{
+            margin: 50% ;
+            
+        } */
+
+        /* #custom-text{
+            color: grey;
+        } */
+
+        /* #cust-Button:hover{
+            color: rgb(7, 7, 7);
+            background-color: cyan;
+            box-shadow: 5px 5px 5px black;
+        } */
+
+        #file-import {
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px black;
+
+        }
+
+        ::-webkit-file-upload-button {
+            color: wheat;
+            padding: 20px;
+            background: royalblue;
+            border: none;
+        }
+
+        ::-webkit-file-upload-button:hover {
+            background: yellowgreen;
+        }
+
+        #head {
+            color: rgb(138, 28, 241);
+            display: flex;
+            justify-content: center;
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top:20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <h2 id="head">Upload Your file</h2>
+
+    </div>
+    <div class="container">
+        <input type="file" id="file-import">
+    </div>
+
+
+<!-- 
+    <button id="cust-Button"> Choose File </button> 
+     <p3 id="cust-text">No File choosen yet</p3>  -->
+
+    <!-- <script>
+        const fileImportBtn = document.getElementById('file-import');
+        // const cButton = document.getElementById('cust-Button');
+        // const cText = document.getElementById('cust-text');
+
+        // cButton.addEventListener('click',function(){
+        //     fileImportBtn.click();
+        // });
+
+        fileImportBtn.addEventListener('change', function () {
+            if (fileImportBtn.value) {
+                // cText.innerHTML= fileImportBtn.value;
+                fileImportBtn.innerHTML = fileImportBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+            } else {
+                fileImportBtn.innerHTML = 'No File Choosen';
+            }
+        });
+    </script> -->
+
+</body>
+
+</html>
